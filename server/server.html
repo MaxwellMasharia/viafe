@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Via</title>
+  <link rel="stylesheet" href="./server.css">
+</head>
+
+<body>
+  <header class="main_header">
+    <section class="section_one">
+      <span class="logo">Via FrontEnd</span>
+      <div class="s_container">
+        <input type="text" class="search_bar_input" placeholder="Search ... ">
+        <input type="file" id="file_input" multiple style="display: none;">
+        <div class="add_files_button">
+          <span>
+            Select File(s)
+          </span>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <section class="section_select hidden">
+      <div class="select_button" id="btn_select_all">Select All</div>
+      <div class="select_button" id="btn_select_none">Select None</div>
+      <div class="select_button" id="btn_remove_selected">Remove Selected</div>
+    </section>
+    <div class="divider"></div>
+    <section class="section_alert hidden">
+      <div class="alert">
+        <span class="message">
+          No message yet
+        </span>
+      </div>
+    </section>
+  </header>
+  <section class="section_title">
+    <span>No File(s) Selected</span>
+  </section>
+  <div class="fdz_container">
+    <div class="file_drop_zone"></div>
+  </div>
+
+  <div class="file_container">
+    <ul class="file_list">
+      <li class="fdr">
+        <div class="fdr_file_number hd">File Number</div>
+        <div class="fdr_file_name hd">File Name</div>
+        <div class="fdr_file_length hd">File Length</div>
+        <div class="fdr_file_type hd">File Type</div>
+      </li>
+    </ul>
+  </div>
+  <script src="./server.js"></script>
+</body>
+
+</html>

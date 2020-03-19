@@ -1,0 +1,51 @@
+Via -> Client {Server}
+1) Add Files
+2) Remove Files
+3) Search the files
+4) Select multiple files
+5) Get the upload status
+6) Cancel file uploads
+7) Get the total number of files being uploaded
+8) Get the total and individual upload speed of all the uploads
+9) Clear the upload history
+10) Calculate the average time remaining for each upload
+11) The upload history should contain
+-> The name of the file
+-> The file size
+-> The time in seconds it took to upload the file
+-> The person or computer where the file is going to
+-> The user should get a notification when the user wants to remove a file that is being uploaded and when the user chooses files {You have chosen n file(s)}
+
+
+## How to Build this
+-> Know ajax file upload progress
+-> Know css animation and transitions
+-> Know css box-shadow 
+-> Know css opacity 
+-> Know vanilla js dom manipulation
+-> Know javascript file drop
+-> Know css grid
+
+
+## How it works ##
+The user starts with an empty page, Then selects files by choosing the files from the file input button or dropping the files in that area, At the start the title should say "No File(s) Selected", After choosing the files,the title should change to "Selected File(s)",The selected files should then appear in a grid-tables representation , From here the user can add more files,Actually the file button should start with "Select File(s)" and change to "Add File(s)",The user can also remove the file by clicking on the file,thus selecting it and then a group of buttons appear for 
+--> Select All
+--> Select None
+--> Remove selected
+
+The user can then choose to select more files and remove them at once,The Sender then sends the update to the Server every time there is a change to the list,The Server then sends an upload request to the Sender for a file upload the Sender then sends an ajax response to the Server containing the files, This creates a new upload element where the Sender can get all the uploads data
+-> The name of the file
+-> The file size
+-> The time in seconds it took to upload the file
+-> The person or computer where the file is going to
+-> The speed of the file upload
+-> The average time remaining for the upload to be completed
+-> A progress bar showing the upload progress
+-> There should also be a general average progress bar for all the file uploads
+
+## How To Build It ##
+
+
+## Problems
+--> When removing the files the numbers should be re-arranged
+--> Telling the number of removed files use classes
